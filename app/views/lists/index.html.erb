@@ -1,8 +1,8 @@
-<div class="container" >
+<div class="bg-image" style="background-image: url('https://ichef.bbci.co.uk/images/ic/1200x675/p01h4hk4.jpg'); height: 100vh;">
   <h1>All lists</h1>
 
-  <% @lists.each do |list| %>
   <div class="d-flex justify-content-between">
+  <% @lists.each do |list| %>
     <div class="card" style="width: 18rem;">
       <img src="http://treeworksguernsey.co.uk/wp-content/uploads/2018/11/Oak.jpg" class="card-img-top" alt="oak tree">
       <div class="card-body">
@@ -10,8 +10,8 @@
       <%= link_to list.name, list_path(list) %></h5>
     </div>
   </div>
-</div>
 <% end %>
+</div>
 
 <%= link_to "New list", new_list_path  %>
 </div>
